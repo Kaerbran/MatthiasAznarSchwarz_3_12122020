@@ -1,0 +1,19 @@
+{
+  "name": "matthiasaznarschwarz_3_12122020",
+  "version": "1.0.0",
+  "description": "Creation of the Ohmyfood project",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./View/Sass/main.scss:./View/public/css/styles.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaerbran/MatthiasAznarSchwarz_3_12122020.git"
+  },
+  "author": "Matthias Aznae-Schwarz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaerbran/MatthiasAznarSchwarz_3_12122020/issues"
+  },
+  "homepage": "https://github.com/Kaerbran/MatthiasAznarSchwarz_3_12122020#readme"
+}
