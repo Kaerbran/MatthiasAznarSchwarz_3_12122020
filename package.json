@@ -4,7 +4,8 @@
   "description": "Creation of the Ohmyfood project",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./View/Sass/main.scss:./View/public/css/styles.css --style expanded"
+    "sass": "sass --watch ./View/Sass/main.scss:./View/public/css/styles.css --style expanded",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "Matthias Aznae-Schwarz",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/Kaerbran/MatthiasAznarSchwarz_3_12122020/issues"
   },
