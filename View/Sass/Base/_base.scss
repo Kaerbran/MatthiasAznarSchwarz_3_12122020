@@ -1,0 +1,17 @@
+/*contient les fichiers qui définissent les fondations de votre site, par
+exemple la police de caractères et les normes que vous voulez appliquer
+sur tout le site*/
+
+/* Ci-dessous les polices de l'identité graphique du site*/
+h1, h2, h3{
+    font-family: 'Shrikhand', cursive;
+}
+
+p, li {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Ci-dessous les couleurs de l'identité graphique du site */
+$primaire: #9356DC;
+$secondaire: #FF79DA;
+$tertiaire: #99E2D0;
