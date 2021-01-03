@@ -3,10 +3,23 @@ exemple la police de caractères et les normes que vous voulez appliquer
 sur tout le site*/
 
 /* Ci-dessous les polices de l'identité graphique du site*/
-h1, h2, h3{
+h1{
     font-family: 'Shrikhand', cursive;
 }
 
-p, li {
+p, li, h2, h3 {
     font-family: 'Roboto', sans-serif;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+h2{
+    font-size: 25px;
+    font-weight: 600;
 }

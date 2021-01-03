@@ -1,0 +1,84 @@
+/*est le dossier où vous mettez vos blocs BEM qui contiennent ce qui est
+réutilisable, par exemple un header pour les mises en page de grande taille
+ou un footer*/
+
+/* DEBUT    Style du HEADER */
+
+.header{
+    display: flex;
+    
+    &__Arrowleft{        
+        position: absolute;
+        top: 18px; left: 20px;
+        &--hide{
+            /*permet de cacher les flèches, lorsqu'on ne se trouve pas sur la page d'acceuil*/
+            display: none;
+        }
+    }
+    &__MainTitle{
+        margin: auto auto auto auto; /*top right bottom left*/
+    }
+}
+
+.headerLocation{
+    display: flex;
+    height: 55px;
+    box-shadow: inset 0 5px 2px -2px lightgray; /* inset | offset-x | offset-y | color */
+    background-color: rgb(229, 229, 229);
+
+    &--hide{
+        /*permet de cacher cette partie du Header pour les autres pages*/
+        display: none;
+    }
+
+    &__LogoMap{
+        margin: auto 0 auto auto; /*top right bottom left*/
+        padding-right: 10px;
+    }
+    &__p{
+        margin: auto auto auto 0; /*top right bottom left*/
+        padding-left: 10px;
+
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.headerPresentation{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15% 60px 15%; /*top right bottom left*/
+    background-color: rgb(244, 244, 244);
+    
+    &__h2{
+        text-align: center;
+        margin-bottom: 7px;
+    }
+    &__p{
+        text-align: center;
+        margin-top: 7px;
+
+        font-size: 18px;
+        font-weight: 300;
+    }
+    &__button{
+        margin-top: 15px;
+        width: 230px;
+        border-radius: 25px;
+        margin-right: auto;
+        margin-left: auto;
+
+        background: $primaire; /*fallback for old browsers*/
+        background: linear-gradient(-10deg, $primaire, $secondaire);
+
+
+        border: none;
+        color: white;
+        padding: 15px 5px; /*top&bottom right&left */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+}
+/* FIN      Style HEADER */
