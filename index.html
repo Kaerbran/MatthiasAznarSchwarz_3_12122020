@@ -37,16 +37,16 @@
 
     <div>
         <h2>Fonctionnement</h2>
-        <ul>
+        <ol>
             <li>choisissez un restaurant</li>
             <li>Composez votre menu</li>
             <li>Dégustez au restaurant</li>
-        </ul>
+        </ol>
     </div>
 
     <div>
         <h2>Restaurants</h2>
-        <div>
+        <article>
             <!-- Nouveau va devoir être positionné avec de l'absolut. A voir si ça perturbe la flexbox! -->
             <p>Nouveau</p>
             <img src="" alt="">
@@ -57,8 +57,8 @@
             <div>
                 <i class="far fa-heart"></i>
             </div>
-        </div>
-        <div>
+        </article>
+        <article>
             <!-- Nouveau va devoir être positionné avec de l'absolut. A voir si ça perturbe la flexbox! -->
             <p>Nouveau</p>
             <img src="" alt="">
@@ -69,8 +69,8 @@
             <div>
                 <i class="far fa-heart"></i>
             </div>
-        </div>
-        <div>
+        </article>
+        <article>
             <!-- Nouveau va devoir être positionné avec de l'absolut. A voir si ça perturbe la flexbox! -->
             <p class="hide">Nouveau</p>
             <img src="" alt="">
@@ -81,8 +81,8 @@
             <div>
                 <i class="far fa-heart"></i>
             </div>
-        </div>
-        <div>
+        </article>
+        <article>
             <!-- Nouveau va devoir être positionné avec de l'absolut. A voir si ça perturbe la flexbox! -->
             <p class="hide">Nouveau</p>
             <img src="" alt="">
@@ -93,17 +93,20 @@
             <div>
                 <i class="far fa-heart"></i>
             </div>
-        </div>
+        </article>
     </div>
     
 
-    <footer>
-        <h3>ohmyfood</h3>
-        <ul>
-            <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-            <li><i class="fas fa-handshake"></i>Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li>Contact</li>
+    <footer class="footer">
+        <h4>ohmyfood</h4>
+
+        <ul class="ListFooter fa-ul">
+            <li class="ListFooter__li ListFooter__li--offset"><span class="fa-li"><i class="fas fa-utensils"></i></span>Proposer un restaurant</li>
+            <li class="ListFooter__li ListFooter__li--offset"><span class="fa-li"><i class="fas fa-hands-helping"></i></span>Devenir partenaire</li>
+        </ul>
+        <ul class="ListFooter ListFooter--StyleRemoved">
+            <li class="ListFooter__li">Mentions légales</li>
+            <li class="ListFooter__li">Contact</li>
         </ul>
     </footer>
 </body>

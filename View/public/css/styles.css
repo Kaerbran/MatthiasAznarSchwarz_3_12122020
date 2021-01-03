@@ -4,11 +4,11 @@
 exemple la police de caractères et les normes que vous voulez appliquer
 sur tout le site*/
 /* Ci-dessous les polices de l'identité graphique du site*/
-h1 {
+h1, h4 {
   font-family: "Shrikhand", cursive;
 }
 
-p, li, h2, h3 {
+p, li, h2, h3, span, li {
   font-family: "Roboto", sans-serif;
 }
 
@@ -107,5 +107,30 @@ ou un footer*/
 }
 
 /* FIN      Style HEADER */
+/* DEBUT    Style FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px 25px 25px;
+  /*top right bottom left*/
+  background-color: #282828;
+  color: white;
+}
+
+.ListFooter {
+  padding: 0;
+  margin: 0;
+}
+.ListFooter__li {
+  padding-bottom: 8px;
+}
+.ListFooter__li--offset {
+  margin-left: 27px;
+}
+.ListFooter--StyleRemoved {
+  list-style: none;
+}
+
+/* FIN      Style FOOTER */
 
 /*# sourceMappingURL=styles.css.map */

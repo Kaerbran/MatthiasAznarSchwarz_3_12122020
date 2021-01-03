@@ -82,3 +82,31 @@ ou un footer*/
     }
 }
 /* FIN      Style HEADER */
+
+/* DEBUT    Style FOOTER */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px 25px 25px; /*top right bottom left*/
+    
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+.ListFooter{
+    padding: 0;
+    margin: 0;
+
+    &__li{
+        padding-bottom: 8px;
+        &--offset{
+            margin-left: 27px;
+        }
+    }
+    &--StyleRemoved{
+        list-style: none;
+    }
+}
+
+/* FIN      Style FOOTER */

@@ -3,11 +3,11 @@ exemple la police de caractères et les normes que vous voulez appliquer
 sur tout le site*/
 
 /* Ci-dessous les polices de l'identité graphique du site*/
-h1{
+h1, h4{
     font-family: 'Shrikhand', cursive;
 }
 
-p, li, h2, h3 {
+p, li, h2, h3, span, li {
     font-family: 'Roboto', sans-serif;
 }
 
