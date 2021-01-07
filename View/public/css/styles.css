@@ -122,7 +122,7 @@ ou un footer*/
 .footer {
   display: flex;
   flex-direction: column;
-  padding: 10px 0px 25px 25px;
+  padding: 10px 0px 25px 5vw;
   /*top right bottom left*/
   background-color: #282828;
   color: white;
@@ -148,12 +148,14 @@ ou un footer*/
 /* FIN      Style FOOTER */
 /* DEBUT    de la section intitulée ''Fonctionnement''*/
 .decalage {
-  margin: 0 0 0 25px;
+  padding: 0 0 0 5vw;
   /*top right bottom left*/
 }
 
-.margeTop {
-  margin-top: 50px;
+.paddingTopBottom {
+  /*Attention est utilisé dans plusieurs div!!!!*/
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
 
 .margeTitel1 {
@@ -232,5 +234,46 @@ ou un footer*/
 }
 
 /* FIN      de la section intitulée ''Fonctionnement''*/
+/* DEBUT    de la section intitulée ''RESTAURANTS''*/
+.styleContainerRestaurant {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+}
+
+.articleRestaurant {
+  display: flex;
+  /* Pas sur que ce soit nécessaire, mais utile si je souhaite utiliser des marges auto */
+  flex-direction: column;
+  position: relative;
+  /* Va me permettre de positionner le text ''nouveau'' de manière
+  absolu, par rapport à cette balise*/
+  background-color: lightcoral;
+  width: 90vw;
+  border-radius: 25px;
+}
+.articleRestaurant__p {
+  background-color: #8addc5;
+  color: #007854;
+  position: absolute;
+  right: 15px;
+  top: 3px;
+  /* AMELIORATION a exprimer en % à l'aide d'une fonction calc()*/
+  width: 85px;
+  height: 29px;
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 5px;
+  /* me permet de centrer le text verticalement... Pas
+  très élegent, mais puisque non responsive, je peux me le permettre.*/
+}
+.articleRestaurant__img {
+  background-size: cover;
+  width: 90vw;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+/* FIN      de la section intitulée ''RESTAURANTS''*/
 
 /*# sourceMappingURL=styles.css.map */
