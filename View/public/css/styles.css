@@ -50,6 +50,11 @@ ou un footer*/
   /*top right bottom left*/
 }
 
+.stopLinkStyleHeader {
+  text-decoration: none;
+  color: black;
+}
+
 .headerLocation {
   display: flex;
   height: 55px;
@@ -235,6 +240,11 @@ ou un footer*/
 
 /* FIN      de la section intitulée ''Fonctionnement''*/
 /* DEBUT    de la section intitulée ''RESTAURANTS''*/
+.stopLinkStyle {
+  text-decoration: none;
+  color: black;
+}
+
 .styleContainerRestaurant {
   background-color: #f4f4f4;
   display: flex;
