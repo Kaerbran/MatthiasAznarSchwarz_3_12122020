@@ -2,7 +2,7 @@
 /* DEBUT    de la section intitulée ''Fonctionnement''*/
 
 .decalage{
-    padding: 0 0 0 5vw; /*top right bottom left*/
+    padding: 0 0 0 $decalage; /*top right bottom left*/
 }
 
 .paddingTopBottom{ /*Attention est utilisé dans plusieurs div!!!!*/
@@ -107,9 +107,14 @@
     position: relative; /* Va me permettre de positionner le text ''nouveau'' de manière
     absolu, par rapport à cette balise*/
 
-    background-color: lightcoral;
     width: 90vw;
     border-radius: 25px;
+
+    background-color: white;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+
+    margin-bottom: 25px;
 
     &__p{
         background-color: rgb(138, 221, 197);
@@ -124,13 +129,33 @@
         text-align: center;
         padding-top: 5px; /* me permet de centrer le text verticalement... Pas
         très élegent, mais puisque non responsive, je peux me le permettre.*/
+        &--hide{
+            display: none;
+        }
     }
     &__img{
-        background-size: cover;
+        object-fit: cover;
         width: 90vw;
+        height: 250px;
         border-top-left-radius: 25px; border-top-right-radius: 25px;
     }
 }
 
+.articleRestaurantContainer{
+    display: flex;
+    flex-direction: row;
+
+    &__FirstDiv{
+        padding-left: 2vw;
+    }
+    &__SecondDiv{
+        margin: auto 0 auto auto; /*top right bottom left*/
+        padding-right: 4vw;
+
+    }
+}
+/*
+background: $primaire;
+background: linear-gradient(-10deg, $primaire, $secondaire); */
 
 /* FIN      de la section intitulée ''RESTAURANTS''*/
