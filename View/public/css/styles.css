@@ -308,5 +308,15 @@ ou un footer*/
 background: $primaire;
 background: linear-gradient(-10deg, $primaire, $secondaire); */
 /* FIN      de la section intitulée ''RESTAURANTS''*/
+/* DEBUT :      Image du Footer des Menus */
+.imageMenuFooter {
+  height: 300px;
+  width: 100vw;
+  object-fit: cover;
+}
+
+/* FIN :        Image du Footer des Menus */
+/* DEBUT :      Corps des Menus */
+/* FIN :        Corps des Menus */
 
 /*# sourceMappingURL=styles.css.map */
