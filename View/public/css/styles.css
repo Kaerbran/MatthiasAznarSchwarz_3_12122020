@@ -153,6 +153,7 @@ ou un footer*/
 /* FIN      Style FOOTER */
 /* DEBUT    de la section intitulée ''Fonctionnement''*/
 .decalage {
+  /* ATTENTION ce style est utilisé de manière global. à voir s'il faut déplacer dans un autre scss*/
   padding: 0 0 0 5vw;
   /*top right bottom left*/
 }
@@ -315,8 +316,29 @@ background: linear-gradient(-10deg, $primaire, $secondaire); */
   object-fit: cover;
 }
 
+.menuBelowFooter {
+  position: relative;
+}
+
+.titelMenu {
+  display: flex;
+  position: relative;
+  bottom: 30px;
+  background-color: #f4f4f4;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: -20px;
+}
+.titelMenu__h1 {
+  margin: 0;
+}
+.titelMenu__heart {
+  margin: auto 5vw auto auto;
+  /*top right bottom left*/
+}
+
 /* FIN :        Image du Footer des Menus */
-/* DEBUT :      Corps des Menus */
+/* DEBUT :      Corps des Menus, sans le titre principal */
 /* FIN :        Corps des Menus */
 
 /*# sourceMappingURL=styles.css.map */
