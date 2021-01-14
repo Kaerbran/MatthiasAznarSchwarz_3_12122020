@@ -1,5 +1,9 @@
 
-/* DEBUT :      Image du Footer des Menus */
+.bodyMenu{ /* me permet d'avoir cette couleur la où on voit le ''body'', car j'ai déplacé de manière absolu le titre sur l'image*/
+    background-color: rgb(244, 244, 244);
+}
+
+/* DEBUT :      Image du Footer des Menus et le titre */
 .imageMenuFooter{
     height: 300px;
     width: 100vw;
@@ -18,19 +22,83 @@
     background-color: rgb(244, 244, 244);
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    margin-top: -20px;
+    margin-top: -15px;
+    padding-top: 30px;
 
     &__h1{
         margin: 0;
     }
     &__heart{
-        margin: auto 5vw auto auto; /*top right bottom left*/
+        margin: auto 10vw auto auto; /*top right bottom left*/
     }
 }
 
-/* FIN :        Image du Footer des Menus */
+/* FIN :        Image du Footer des Menus et le titre */
+
+
+
+/* DEBUT :      Titre H2 avec une barre en dessous */
+.menuH2Titel{
+    display: flex;
+    flex-direction: column;
+
+    width: 120px;
+    margin: 10px 0 20px 0;   /*top right bottom left*/
+
+    &__h2{
+        margin: 0 0 5px 0;    /*top right bottom left*/
+
+    }
+    &__barre{
+        background-color: $tertiaire;
+        width: 60%;
+        height: 4px;
+    }
+}
+
+/* FIN :        Titre H2 avec une barre en dessous */
+
+
 
 /* DEBUT :      Corps des Menus, sans le titre principal */
+.styleMainMenuDiv{
+    background-color: rgb(244, 244, 244);
+}
+
+.mainDishContainer{
+    display: flex;
+
+    background-color: rgb(255, 255, 255);
+    width: 90vw;
+    padding: 5px 10px 5px 10px;   /*top right bottom left*/
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.subDishContainer{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;    /* L'animation va devoir réduire cette valeur */
+
+    &__h3{
+        margin: 10px 0 2px 0;  /*top right bottom left*/
+    }
+    &__Text{
+        display: flex;
+        &__p{
+            margin: 2px 0 10px 0;  /*top right bottom left*/
+        }
+        &__price{
+            margin: 2px 5vw 10px auto;   /*top right bottom left*/
+            font-weight: bold;
+        }
+    }
+}
+.subDishContainerPrice{
+    margin: 0 5vw 0 auto;   /*top right bottom left*/
+}
 
 
 /* FIN :        Corps des Menus */

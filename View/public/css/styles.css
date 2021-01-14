@@ -309,7 +309,12 @@ ou un footer*/
 background: $primaire;
 background: linear-gradient(-10deg, $primaire, $secondaire); */
 /* FIN      de la section intitulée ''RESTAURANTS''*/
-/* DEBUT :      Image du Footer des Menus */
+.bodyMenu {
+  /* me permet d'avoir cette couleur la où on voit le ''body'', car j'ai déplacé de manière absolu le titre sur l'image*/
+  background-color: #f4f4f4;
+}
+
+/* DEBUT :      Image du Footer des Menus et le titre */
 .imageMenuFooter {
   height: 300px;
   width: 100vw;
@@ -327,18 +332,80 @@ background: linear-gradient(-10deg, $primaire, $secondaire); */
   background-color: #f4f4f4;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  margin-top: -20px;
+  margin-top: -15px;
+  padding-top: 30px;
 }
 .titelMenu__h1 {
   margin: 0;
 }
 .titelMenu__heart {
-  margin: auto 5vw auto auto;
+  margin: auto 10vw auto auto;
   /*top right bottom left*/
 }
 
-/* FIN :        Image du Footer des Menus */
+/* FIN :        Image du Footer des Menus et le titre */
+/* DEBUT :      Titre H2 avec une barre en dessous */
+.menuH2Titel {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  margin: 10px 0 20px 0;
+  /*top right bottom left*/
+}
+.menuH2Titel__h2 {
+  margin: 0 0 5px 0;
+  /*top right bottom left*/
+}
+.menuH2Titel__barre {
+  background-color: #99E2D0;
+  width: 60%;
+  height: 4px;
+}
+
+/* FIN :        Titre H2 avec une barre en dessous */
 /* DEBUT :      Corps des Menus, sans le titre principal */
+.styleMainMenuDiv {
+  background-color: #f4f4f4;
+}
+
+.mainDishContainer {
+  display: flex;
+  background-color: white;
+  width: 90vw;
+  padding: 5px 10px 5px 10px;
+  /*top right bottom left*/
+  border-radius: 25px;
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.subDishContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* L'animation va devoir réduire cette valeur */
+}
+.subDishContainer__h3 {
+  margin: 10px 0 2px 0;
+  /*top right bottom left*/
+}
+.subDishContainer__Text {
+  display: flex;
+}
+.subDishContainer__Text__p {
+  margin: 2px 0 10px 0;
+  /*top right bottom left*/
+}
+.subDishContainer__Text__price {
+  margin: 2px 5vw 10px auto;
+  /*top right bottom left*/
+  font-weight: bold;
+}
+
+.subDishContainerPrice {
+  margin: 0 5vw 0 auto;
+  /*top right bottom left*/
+}
+
 /* FIN :        Corps des Menus */
 
 /*# sourceMappingURL=styles.css.map */
