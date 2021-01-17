@@ -149,6 +149,7 @@
 .articleRestaurantContainer{
     display: flex;
     flex-direction: row;
+    position: relative;
 
     &__FirstDiv{
         padding-left: 2vw;
@@ -162,5 +163,64 @@
 /*
 background: $primaire;
 background: linear-gradient(-10deg, $primaire, $secondaire); */
+
+/* DEBUT : Animation du coeur */
+
+@mixin positionHeartAnimation {
+    position: absolute;
+    right: 0px; top: 0px;
+}
+
+.HeartContainerAnimated{
+    position: relative;
+    margin: auto 5vw auto auto; /*top right bottom left*/
+    /* à noter que le margin me permet de toujours placer le coeur à 5vw du bord droit et center. */
+    padding: 10px;
+
+    height: 100%;
+    width: 34px;
+
+    &:hover{
+        & > .HeartContainerAnimated__secondLayer{
+            transform: scaleY(0.01);
+        }
+    }
+
+    &__firstLayer{
+        @include positionHeartAnimation;
+
+        background: linear-gradient(-10deg, $primaire, $secondaire);
+        -webkit-background-clip: text;
+        color: transparent;
+
+        z-index: 1;
+    }
+    &__secondLayer{
+        @include positionHeartAnimation;
+
+        height: 30px; width: 34px; /* Ici nous avons une div avec les dimensions d'un coeur */
+        /*C'est le height qui doit diminuer pendant l'animation*/
+
+        background-color: white;
+        &--colorBeige{
+            /*à rajouter pour les menus, car le fond est d'une autre couleur*/
+            background-color: rgb(244, 244, 244);;
+        }
+
+        transform-origin: top center;
+        transform: scaleY(1);
+        transition: transform 300ms;
+
+        z-index: 2;     /* Je souhaite que le rectangle cache le coeur plein. Il doit donc se trouver entre le contour du coeur et le coeur plein*/
+    }
+    &__thirdLayer{
+        @include positionHeartAnimation;
+
+        z-index: 3;     /* Je souhaite que le contour du coeur soit toujours noir et toujours visible, donc tout en haut*/
+    }
+}
+
+/* FIN :      Animation du coeur*/
+
 
 /* FIN      de la section intitulée ''RESTAURANTS''*/

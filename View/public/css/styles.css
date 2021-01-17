@@ -295,6 +295,7 @@ ou un footer*/
 .articleRestaurantContainer {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 .articleRestaurantContainer__FirstDiv {
   padding-left: 2vw;
@@ -308,6 +309,56 @@ ou un footer*/
 /*
 background: $primaire;
 background: linear-gradient(-10deg, $primaire, $secondaire); */
+/* DEBUT : Animation du coeur */
+.HeartContainerAnimated {
+  position: relative;
+  margin: auto 5vw auto auto;
+  /*top right bottom left*/
+  /* à noter que le margin me permet de toujours placer le coeur à 5vw du bord droit et center. */
+  padding: 10px;
+  height: 100%;
+  width: 34px;
+}
+.HeartContainerAnimated:hover > .HeartContainerAnimated__secondLayer {
+  transform: scaleY(0.01);
+}
+.HeartContainerAnimated__firstLayer {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: linear-gradient(-10deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  color: transparent;
+  z-index: 1;
+}
+.HeartContainerAnimated__secondLayer {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 30px;
+  width: 34px;
+  /* Ici nous avons une div avec les dimensions d'un coeur */
+  /*C'est le height qui doit diminuer pendant l'animation*/
+  background-color: white;
+  transform-origin: top center;
+  transform: scaleY(1);
+  transition: transform 300ms;
+  z-index: 2;
+  /* Je souhaite que le rectangle cache le coeur plein. Il doit donc se trouver entre le contour du coeur et le coeur plein*/
+}
+.HeartContainerAnimated__secondLayer--colorBeige {
+  /*à rajouter pour les menus, car le fond est d'une autre couleur*/
+  background-color: #f4f4f4;
+}
+.HeartContainerAnimated__thirdLayer {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 3;
+  /* Je souhaite que le contour du coeur soit toujours noir et toujours visible, donc tout en haut*/
+}
+
+/* FIN :      Animation du coeur*/
 /* FIN      de la section intitulée ''RESTAURANTS''*/
 .bodyMenu {
   /* me permet d'avoir cette couleur la où on voit le ''body'', car j'ai déplacé de manière absolu le titre sur l'image*/
@@ -370,9 +421,11 @@ background: linear-gradient(-10deg, $primaire, $secondaire); */
 
 .mainDishContainer {
   display: flex;
+  margin: 0 0 15px 0;
+  /*top right bottom left*/
   background-color: white;
   width: 90vw;
-  padding: 5px 10px 5px 10px;
+  padding: 0 0 0 10px;
   /*top right bottom left*/
   border-radius: 25px;
   box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
@@ -381,8 +434,10 @@ background: linear-gradient(-10deg, $primaire, $secondaire); */
 .subDishContainer {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   /* L'animation va devoir réduire cette valeur */
+  padding: 5px 0 5px 0;
+  /*top right bottom left*/
 }
 .subDishContainer__h3 {
   margin: 10px 0 2px 0;
@@ -390,6 +445,10 @@ background: linear-gradient(-10deg, $primaire, $secondaire); */
 }
 .subDishContainer__Text {
   display: flex;
+  overflow: hidden;
+  /* le contenant ne change pas de taille et cache les choses en trop ou qui dépassent*/
+  text-overflow: ellipsis;
+  /* met trois points lorsque quelque chose n'apparait pas*/
 }
 .subDishContainer__Text__p {
   margin: 2px 0 10px 0;
@@ -401,8 +460,15 @@ background: linear-gradient(-10deg, $primaire, $secondaire); */
   font-weight: bold;
 }
 
-.subDishContainerPrice {
-  margin: 0 5vw 0 auto;
+.hoverAnimationOkay {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 10%;
+  height: 100%;
+  color: white;
+  background-color: #99E2D0;
+  margin: auto 0 auto 0;
   /*top right bottom left*/
 }
 
