@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* Ci-dessous les couleurs de l'identité graphique du site */
 /* Ci-dessous le décalage par rapport à la gauche de l'ensemble des articles et du body et du footer */
+/* Le Keyframe ci-dessous est à mettre dans la classe .mainDishContainer Et sert à faire apparaitre peu à peu les menus. */
+@keyframes progressiveAppearanceMenu {}
 /*contient les fichiers qui définissent les fondations de votre site, par
 exemple la police de caractères et les normes que vous voulez appliquer
 sur tout le site*/
