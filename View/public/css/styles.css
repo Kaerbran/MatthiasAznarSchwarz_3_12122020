@@ -2,7 +2,16 @@
 /* Ci-dessous les couleurs de l'identité graphique du site */
 /* Ci-dessous le décalage par rapport à la gauche de l'ensemble des articles et du body et du footer */
 /* Le Keyframe ci-dessous est à mettre dans la classe .mainDishContainer Et sert à faire apparaitre peu à peu les menus. */
-@keyframes progressiveAppearanceMenu {}
+@keyframes progressiveAppearanceMenu {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 /*contient les fichiers qui définissent les fondations de votre site, par
 exemple la police de caractères et les normes que vous voulez appliquer
 sur tout le site*/
@@ -435,6 +444,10 @@ background: linear-gradient(-10deg, $primaire, $secondaire); */
   /* le contenant ne change pas de taille et cache les choses en trop ou qui dépassent*/
   text-overflow: ellipsis;
   /* met trois points lorsque quelque chose n'apparait pas*/
+  /* Ci-dessous l'animation nous permettant de faire une belle transition d'apparition pour les
+  différents élements du menu */
+  animation: progressiveAppearanceMenu 1000ms;
+  opacity: 1;
 }
 .mainDishContainer:hover .hoverAnimationOkay {
   margin: auto 0 auto 0;
@@ -442,6 +455,15 @@ background: linear-gradient(-10deg, $primaire, $secondaire); */
 }
 .mainDishContainer:hover .hoverAnimationOkay__iconChecked {
   transform: rotate(360deg);
+}
+.mainDishContainer--1 {
+  animation-delay: 75ms;
+}
+.mainDishContainer--2 {
+  animation-delay: 150ms;
+}
+.mainDishContainer--3 {
+  animation-delay: 225ms;
 }
 
 .subDishContainer {

@@ -1,5 +1,13 @@
 
 /* Le Keyframe ci-dessous est à mettre dans la classe .mainDishContainer Et sert à faire apparaitre peu à peu les menus. */
 @keyframes progressiveAppearanceMenu{
-
+    0%{
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }

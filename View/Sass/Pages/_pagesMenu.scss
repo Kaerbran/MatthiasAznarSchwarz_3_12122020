@@ -88,6 +88,15 @@
         }
     }
 
+    /* Ci-dessous l'animation nous permettant de faire une belle transition d'apparition pour les
+    différents élements du menu */
+    animation: progressiveAppearanceMenu 1000ms ;
+    opacity: 1;
+    @for $i from 1 to 4 {
+        &--#{$i} {
+            animation-delay: 75ms * $i;
+        }
+    }
 }
 
 .subDishContainer{
