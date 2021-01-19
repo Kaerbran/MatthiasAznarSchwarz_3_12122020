@@ -11,3 +11,19 @@
         opacity: 1;
     }
 }
+
+
+/*Ci-dessous un loader que j'ai pris de ce site : https://projects.lukehaas.me/css-loaders/*/
+@keyframes load8 {
+    0% {
+      display: flex;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(4turn);
+      transform: rotate(4turn);
+      opacity: 1;
+    }
+  }
