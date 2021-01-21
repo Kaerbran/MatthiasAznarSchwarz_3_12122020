@@ -95,6 +95,12 @@ ou un footer*/
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
+
+        &--MenuVersion{
+            align-content: center;
+            margin-bottom: 85px;
+        }
+
     }
 }
 /* FIN      Style HEADER */

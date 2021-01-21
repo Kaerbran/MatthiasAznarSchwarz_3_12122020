@@ -153,11 +153,16 @@
 
     &__FirstDiv{
         padding-left: 2vw;
+        & p{
+            margin-top: 3px;
+        }
+        & h3{
+            margin-bottom: 0;
+        }
     }
     &__SecondDiv{
         margin: auto 0 auto auto; /*top right bottom left*/
         padding-right: 4vw;
-
     }
 }
 /*
