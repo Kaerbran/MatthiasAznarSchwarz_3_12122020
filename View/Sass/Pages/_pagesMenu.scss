@@ -110,8 +110,11 @@
     display: flex;
     flex-direction: column;
 
-    width: 100%;    /* L'animation va devoir réduire cette valeur */
+    width: 90vw;    /* L'animation va devoir réduire cette valeur */
     padding: 5px 0 5px 0;   /*top right bottom left*/
+
+    overflow: hidden;           /* le contenant ne change pas de taille et cache les choses en trop ou qui dépassent*/
+    text-overflow: ellipsis;    /* met trois points lorsque quelque chose n'apparait pas*/
 
     &__h3{
         margin: 10px 0 2px 0;  /*top right bottom left*/
@@ -137,14 +140,14 @@
     overflow: hidden;
 
     height: 100%;
-    width: 15%;
-    /*width: 0%;*/ /*la largeur doit être de 0% si pas de hover et à 15% si hover*/
+    width: 15%; /*pose problème???
+    mettre 15vw?*/
 
     color: white;
 
     background-color: $tertiaire;
-    margin: auto -14vw auto 0;  /*top right bottom left*/
-    padding: 22px 4vw 22px 4vw;  /*top right bottom left*/
+    margin: auto -15vw auto 0;  /*top right bottom left*/
+    padding: 22px 10vw 22px 5vw;  /*top right bottom left*/
 
     transition : all 300ms; /*margin change!*/
 
