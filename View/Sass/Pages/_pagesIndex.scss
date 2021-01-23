@@ -10,7 +10,7 @@
     padding-bottom: 55px;
 }
 .margeTitel1{
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 .bttFonctionnement{
@@ -20,7 +20,7 @@
 
     background-color: rgb(244, 244, 244);
 
-    width: 95%;
+    width: 88vw;
     height: 65px;
     border-radius: 20px;
 
@@ -96,6 +96,7 @@
 /* DEBUT    de la section intitulée ''RESTAURANTS''*/
 
 .stopLinkStyle{
+    display: bloc;
     text-decoration: none;
     color: black;
 }
@@ -104,6 +105,17 @@
     background-color: rgb(244, 244, 244);
     display: flex;
     flex-direction: column;
+
+    @media (min-width:768px) {
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding-right: $decalage;
+    }
+}
+
+.IndexH2{
+    /*J'en ai juste besoin pour la version ipad et pc*/
+    width: 100%;
 }
 
 .articleRestaurant{
@@ -120,6 +132,10 @@
     box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
 
     margin-bottom: 25px;
+
+    @media (min-width:768px) {
+        width: 44vw;    
+    }
 
     &__p{
         background-color: rgb(138, 221, 197);
@@ -143,6 +159,10 @@
         width: 90vw;
         height: 250px;
         border-top-left-radius: 25px; border-top-right-radius: 25px;
+
+        @media (min-width:768px) {
+            width: 44vw;    
+        }
     }
 }
 

@@ -6,10 +6,11 @@ ou un footer*/
 
 .header{
     display: flex;
+    margin-top: 15px; margin-bottom: 5px;
     
     &__Arrowleft{        
         position: absolute;
-        top: 18px; left: 20px;
+        top: 28px; left: 20px;
         &--hide{
             /*permet de cacher les flèches, lorsqu'on ne se trouve pas sur la page d'acceuil*/
             display: none;
@@ -97,11 +98,16 @@ ou un footer*/
         font-size: 16px;
 
         &--MenuVersion{
-            align-content: center;
-            margin-bottom: 85px;
+            margin: 15px auto 85px auto; /*top right bottom left*/
+            width: 190px;
         }
 
     }
+}
+
+.flexDivBtn{
+    /*Vraiment pas beau, mais me permet de centrer facilement le bouton des menus...*/
+    display: flex;
 }
 /* FIN      Style HEADER */
 

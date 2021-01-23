@@ -42,17 +42,18 @@
     display: flex;
     flex-direction: column;
 
-    width: 120px;
+    width: 100%;
     margin: 10px 0 20px 0;   /*top right bottom left*/
 
     &__h2{
         margin: 0 0 5px 0;    /*top right bottom left*/
         font-weight: 300;
+        width: 120px;
 
     }
     &__barre{
         background-color: $tertiaire;
-        width: 60%;
+        width: 72px;
         height: 4px;
     }
 }
@@ -70,6 +71,19 @@
 
 .MenuSection{
     margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width:768px) {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding-right: $decalage;
+    }
+    @media (min-width:1000px) {
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding-right: $decalage;
+    }
 }
 
 .mainDishContainer{
@@ -81,6 +95,13 @@
     padding: 0 0 0 10px;   /*top right bottom left*/
     border-radius: 25px;
     box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+
+    @media (min-width:768px) {
+        width: 42vw;    
+    }
+    @media (min-width:1000px) {
+        width: 28vw;    
+    }
 
     /*Nous avons besoin ici de overflow hidden, pour pouvoir ''cacher'' à droite de ce bloc l'animation qui va apparaitre.*/
     overflow: hidden;           /* le contenant ne change pas de taille et cache les choses en trop ou qui dépassent*/
