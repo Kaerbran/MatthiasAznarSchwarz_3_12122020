@@ -76,8 +76,8 @@ h2 {
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
-  -webkit-animation: load8 3s linear;
-  animation: load8 3s linear;
+  -webkit-animation: load8 1.5s linear;
+  animation: load8 1.5s linear;
 }
 
 /*est le dossier où vous mettez vos blocs BEM qui contiennent ce qui est
