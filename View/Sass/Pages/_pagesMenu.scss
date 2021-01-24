@@ -121,7 +121,7 @@
     différents élements du menu */
     animation: progressiveAppearanceMenu 1000ms ;
     opacity: 1;
-    @for $i from 1 to 4 {
+    @for $i from 1 to 5 {
         &--#{$i} {
             animation-delay: 75ms * $i;
         }

@@ -134,6 +134,10 @@ ou un footer*/
         &:hover{
             cursor: pointer;
         }
+        &--mailto{
+            color: white;
+            text-decoration: none;
+        }
     }
     &--StyleRemoved{
         list-style: none;

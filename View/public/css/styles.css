@@ -212,6 +212,10 @@ ou un footer*/
 .ListFooter__li:hover {
   cursor: pointer;
 }
+.ListFooter__li--mailto {
+  color: white;
+  text-decoration: none;
+}
 .ListFooter--StyleRemoved {
   list-style: none;
 }
@@ -583,6 +587,9 @@ background: linear-gradient(-10deg, $primaire, $secondaire); */
 }
 .mainDishContainer--3 {
   animation-delay: 225ms;
+}
+.mainDishContainer--4 {
+  animation-delay: 300ms;
 }
 
 .subDishContainer {
