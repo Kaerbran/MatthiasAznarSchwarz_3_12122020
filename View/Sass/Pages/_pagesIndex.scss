@@ -206,6 +206,7 @@ background: linear-gradient(-10deg, $primaire, $secondaire); */
     width: 34px;
 
     &:hover{
+        cursor: pointer;
         & > .HeartContainerAnimated__secondLayer{
             transform: scaleY(0.01);
         }

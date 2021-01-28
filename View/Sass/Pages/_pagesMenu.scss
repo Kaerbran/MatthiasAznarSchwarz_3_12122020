@@ -108,6 +108,7 @@
     text-overflow: ellipsis;    /* met trois points lorsque quelque chose n'apparait pas*/
     
     &:hover{
+        cursor: pointer;
         & .hoverAnimationOkay{
             margin: auto 0 auto 0; /*top right bottom left*/
 

@@ -416,6 +416,9 @@ background: linear-gradient(-10deg, $primaire, $secondaire); */
   height: 100%;
   width: 34px;
 }
+.HeartContainerAnimated:hover {
+  cursor: pointer;
+}
 .HeartContainerAnimated:hover > .HeartContainerAnimated__secondLayer {
   transform: scaleY(0.01);
 }
@@ -569,6 +572,9 @@ background: linear-gradient(-10deg, $primaire, $secondaire); */
   .mainDishContainer {
     width: 28vw;
   }
+}
+.mainDishContainer:hover {
+  cursor: pointer;
 }
 .mainDishContainer:hover .hoverAnimationOkay {
   margin: auto 0 auto 0;
