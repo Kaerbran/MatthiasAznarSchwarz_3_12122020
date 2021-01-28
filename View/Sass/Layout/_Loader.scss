@@ -16,16 +16,15 @@
   left: 45%;
   z-index: 9999;
 
-  margin: 60px auto;
   font-size: 10px;
-  text-indent: -9999em;
+  text-indent: -9999em;         // permet de cacher le text du loader
   border-top: 1.1em solid $primaire;
   border-right: 1.1em solid $primaire;
   border-bottom: 1.1em solid $primaire;
-  border-left: 1.1em solid $secondaire;
+  border-left: 1.1em solid $secondaire;   // ce le bord qui a une couleur différente! 
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
-  -webkit-animation: load8 1.5s linear;
-  animation: load8 1.5s linear;
+  -webkit-animation: load 1.5s linear;
+  animation: load 1.5s linear;  // permet d'appeler le keyframe
 }

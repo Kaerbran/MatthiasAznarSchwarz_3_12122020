@@ -119,11 +119,11 @@
 
     /* Ci-dessous l'animation nous permettant de faire une belle transition d'apparition pour les
     différents élements du menu */
-    animation: progressiveAppearanceMenu 1000ms ;
+    animation: progressiveAppearanceMenu 1000ms;
     opacity: 1;
     @for $i from 1 to 5 {
         &--#{$i} {
-            animation-delay: 75ms * $i;
+            animation-delay: 125ms * $i;
         }
     }
 }
