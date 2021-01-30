@@ -49,13 +49,11 @@ h2 {
   font-weight: 600;
 }
 
-/*Ci-dessous un loader que j'ai pris de ce site : https://projects.lukehaas.me/css-loaders/*/
 .loader,
 .loader:after {
   border-radius: 50%;
   width: 7em;
   height: 7em;
-  /*permet de faire en sorte que le loader apparaisse au milieu de l'écran*/
 }
 
 .loader {

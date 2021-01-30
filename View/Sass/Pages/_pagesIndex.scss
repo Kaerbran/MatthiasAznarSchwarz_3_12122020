@@ -201,10 +201,10 @@ background: linear-gradient(-10deg, $primaire, $secondaire); */
     margin: auto 5vw auto auto; /*top right bottom left*/
     /* à noter que le margin me permet de toujours placer le coeur à 5vw du bord droit et center. */
     padding: 10px;
-
     height: 100%;
-    width: 34px;
 
+    width: 34px;
+    
     &:hover{
         cursor: pointer;
         & > .HeartContainerAnimated__secondLayer{
@@ -214,7 +214,7 @@ background: linear-gradient(-10deg, $primaire, $secondaire); */
 
     &__firstLayer{
         @include positionHeartAnimation;
-
+        
         background: linear-gradient(-10deg, $primaire, $secondaire);
         -webkit-background-clip: text;
         color: transparent;
