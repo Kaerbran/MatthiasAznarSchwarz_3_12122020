@@ -12,6 +12,7 @@
     }
 }
 
+/* Ci-dessous les Keyframes qui permettent de mettre en place le Loader de la page d'acceuil */
 @keyframes load {
     0% {
       -webkit-transform: rotate(0deg);
@@ -22,5 +23,20 @@
       -webkit-transform: rotate(4turn);
       transform: rotate(4turn);
       opacity: 1;
+    }
+  }
+
+  @keyframes loadBackground {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    80% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1);
     }
   }

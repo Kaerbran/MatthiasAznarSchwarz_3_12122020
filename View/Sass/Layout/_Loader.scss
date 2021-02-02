@@ -9,8 +9,7 @@
 .loader {
   opacity: 0;   /*On souhaite que le loader apparaisse uniquement au début et ensuite disparaisse*/
   position: absolute;
-  top: 45%;
-  left: 45%;
+  top: 45%; left: 45%;
   z-index: 9999;
 
   font-size: 10px;
@@ -24,4 +23,19 @@
   transform: translateZ(0);
   -webkit-animation: load 1.5s linear;
   animation: load 1.5s linear;  // permet d'appeler le keyframe
+}
+
+.loaderBackground{
+  position: absolute;
+  z-index: 9998;
+
+  opacity: 0;
+  transform: scale(0);
+  animation: loadBackground 1.5s linear;
+
+  height: 200vh;
+  width: 100vw;
+  background-color: white;
+  margin: -30px 0 0 0;/*top right bottom left*/
+  padding: 0;
 }

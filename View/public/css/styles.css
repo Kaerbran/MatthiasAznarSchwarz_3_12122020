@@ -12,6 +12,7 @@
     opacity: 1;
   }
 }
+/* Ci-dessous les Keyframes qui permettent de mettre en place le Loader de la page d'acceuil */
 @keyframes load {
   0% {
     -webkit-transform: rotate(0deg);
@@ -22,6 +23,20 @@
     -webkit-transform: rotate(4turn);
     transform: rotate(4turn);
     opacity: 1;
+  }
+}
+@keyframes loadBackground {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
   }
 }
 /*contient les fichiers qui définissent les fondations de votre site, par
@@ -74,6 +89,20 @@ h2 {
   transform: translateZ(0);
   -webkit-animation: load 1.5s linear;
   animation: load 1.5s linear;
+}
+
+.loaderBackground {
+  position: absolute;
+  z-index: 9998;
+  opacity: 0;
+  transform: scale(0);
+  animation: loadBackground 1.5s linear;
+  height: 200vh;
+  width: 100vw;
+  background-color: white;
+  margin: -30px 0 0 0;
+  /*top right bottom left*/
+  padding: 0;
 }
 
 /*est le dossier où vous mettez vos blocs BEM qui contiennent ce qui est
@@ -614,7 +643,7 @@ background: linear-gradient(-10deg, $primaire, $secondaire); */
 .subDishContainer__h3 {
   margin: 10px 0 2px 0;
   /*top right bottom left*/
-  height: 25px;
+  height: 23px;
   /* Remarque générale, la propriété overflow hidden ne fonctionne que si on a une hauteur maxi défini! Logique...*/
   overflow: hidden;
   /* le contenant ne change pas de taille et cache les choses en trop ou qui dépassent*/
@@ -626,7 +655,7 @@ background: linear-gradient(-10deg, $primaire, $secondaire); */
 }
 .subDishContainer__Text {
   display: flex;
-  height: 28px;
+  height: 30px;
 }
 .subDishContainer__Text__p {
   margin: 2px 0 10px 0;

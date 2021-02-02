@@ -149,12 +149,12 @@
 
     &__h3{
         margin: 10px 0 2px 0;  /*top right bottom left*/
-        height: 25px;
+        height: 23px;
         @include overflowElilipsis();
     }
     &__Text{
         display: flex;
-        height: 28px;
+        height: 30px;
 
         &__p{
             margin: 2px 0 10px 0;  /*top right bottom left*/
